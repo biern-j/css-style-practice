@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Form</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>My Personal Form</h1>
+      </header>
+      <article>
+        <form>
+          <label for="myName">My name</label>
+          <input id="myName" type="text" />
+          <input type="submit" value="Submit" />
+        </form>
+        <form>
+          <label for="myEmail">My email</label>
+          <input id="myEmail" type="email" name="email" />
+          <!--"name" atribute is usefull for reference value form this input in submitted form data-->
+          <input type="submit" value="Submit" />
+        </form>
+        <form>
+          <label for="myPhone">My phone</label>
+          <input id="myPhone" type="tel" name="tel" />
+          <input type="submit" value="Submit" />
+        </form>
+        <form>
+          <label for="myMessage">My message</label>
+          <!--Multi line of text in textarea-->
+          <textarea id="myMessage"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </article>
+    </section>
+    <section>
+      <header>
+        <h1>
+          My Mood to select:
+        </h1>
+      </header>
+      <article>
+        <form>
+          <label for="myMood"></label>
+          <!--in element "select", like in "input" attribute "id" is for refer options to selector -->
+
+          <select id="myMood" name="myMood">
+            <option value="Sad">Sad</option>
+            <!-- "value" atribute for data reference in submitted form data-->
+            <option value="Panic">Panic</option>
+            <option value="Iritated">Iritated</option>
+            <option value="Tired">Tired</option>
+            <option value="Bored">Bored</option>
+            <option value="Anxious">Anxious</option>
+          </select>
+        </form>
+      </article>
+    </section>
+    <section>
+            <header>
+              <h1>To Do lsit:</h1>
+              <article>
+              <fieldset>
+                <legend>My to do checklist</legend>
+                <input type="checkbox" id="engilsh" value="isue-1" name="toDo" /><label
+                  for="engilsh"
+                  >English: write short text with one grammary isue</label
+                >
+                <input type="checkbox" id="france" value="isue-2" name="toDo" /><label
+                  for="france"
+                  >France: Busuu</label
+                >
+                <input type="checkbox" id="witWWW" value="isue-3" name="toDo" /><label
+                  for="witWWW"
+                  >WiT: www repository</label
+                >
+                <input type="checkbox" id="witSM" value="isue-4" name="toDo" /><label
+                  for="witSM"
+                  >WiT:social media contact</label
+                >
+                <input
+                  type="checkbox"
+                  id="masterWork"
+                  value="isue-5"
+                  name="toDo"
+                /><label for="masterWork"
+                  >MasterWork: send titles of chapters and data</label
+                >
+              </fieldset>
+            </header>
+           </article>
+          </section>
+    <section>
+      <header>
+        <h1>How I rest today:</h1>
+        <!--"Radio" element does not need <form> wraper (?) -->
+        <article>
+        <fieldset>
+          <legend>My rest list</legend>
+          <input type="radio" id="Movie" value="isue-1" name="toDo" /><label
+            for="Movie"
+            >Movie</label
+          >
+          <input type="radio" id="book" value="isue-2" name="toDo" /><label
+            for="book"
+            >Book</label
+          >
+          <input type="radio" id="game" value="isue-3" name="toDo" /><label
+            for="game"
+            >Game</label>
+        </fieldset>
+      </header>
+     </article>
+    </section>
+  </body>
+</html>

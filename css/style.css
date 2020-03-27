@@ -1,4 +1,4 @@
-/* Css rule begine with selector "h1". In Bracket we describe how we want to style selected element. We set property ex. :color" with value "orange". This pare propertic and value is call as a "declaration" */
+/* Cascading style sheets: Css rule begine with selector "h1". In Bracket we describe how we want to style selected element. We set property ex. :color" with value "orange". This pare propertic and value is call as a "declaration" */
 h1 {
   color: orange;
   text-align: center;
@@ -23,8 +23,49 @@ header p {
 .highlite {
   background-color: yellow;
 }
+.box-A {
+  background-color: lightgray;
+  padding: 30px;
+  border: 3px black solid;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.box-B {
+  background-color: orange;
+  width: 250px;
+  height: 250px;
+}
 /* Class selector with tyle selectors */
 
 footer .highlite {
   background-color: aqua;
 }
+
+/* Cascading: metafore of waterfall, sypiąco się, zpływająco się. It mean that Order of rules have matter. Html start with small default cascade theme, but css can overide this cascade wiht their own theme. Controle the rule when some conflict with rules appears */
+
+/* Inheritance: Inherence allow to set from parents to chldren propertis*/
+
+/* Specificity: Set from more general to more specific: from the most general to the most specificity:
+type selectors: 
+p {
+    color: red;
+}
+desendant & type selectors:
+header p {
+    color: blue;
+} 
+body header p {
+    color: green;
+}
+class selector:
+.highlite {
+    color: back;
+}
+cass & descendant:
+footer .highlite {
+    color: white
+}
+ */

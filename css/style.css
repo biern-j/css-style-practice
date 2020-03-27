@@ -1,0 +1,30 @@
+/* Css rule begine with selector "h1". In Bracket we describe how we want to style selected element. We set property ex. :color" with value "orange". This pare propertic and value is call as a "declaration" */
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+section h1 {
+  color: orange;
+  text-align: left;
+}
+
+/* Types selector */
+p {
+  color: green;
+}
+
+/* Descendant selectors */
+
+header p {
+  color: blue;
+}
+/* Class selector: more reusable */
+.highlite {
+  background-color: yellow;
+}
+/* Class selector with tyle selectors */
+
+footer .highlite {
+  background-color: aqua;
+}

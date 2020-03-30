@@ -1,0 +1,91 @@
+html {
+  background-color: #869960;
+}
+
+/* set font for all paragraphs */
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 87%;
+}
+/* UX: users' eyes focus on the center of the page */
+.container {
+  max-width: 940px;
+  /* 
+    margin-left: auto;
+    margin-right: auto;
+    equal:
+     */
+  margin: auto;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* Width of box changed, but we still want to our width as a max-width 940px. Padding will remain, but max-width stay no changed */
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #617140;
+}
+
+footer {
+  text-align: center;
+  font-size: 85%;
+  color: #999;
+  padding: 20px 0 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  margin: 0;
+}
+
+.content-area {
+  border-top: 3px solid #e5e9dc;
+  border-bottom: 3px solid #e5e9dc;
+}
+
+/* CLEANING FLOAT START
+  User float to set elements in column layout. Floated elements position themselfs next tu each other in a row. But parent element doesn't see floated children, so we need to clean float by ready exist solution. We add ".group" class in to parent class group.
+   */
+.main-area {
+  width: 66%;
+  float: left;
+  padding-right: 40px;
+  /* again: now total width of element is changed by padding 66% + 40px, but we still want our width to be 66%, so we use box-sizing: border-box */
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  background-color: #e5e9dc;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-size: 85%;
+}
+/* bad soultion of cleaning float for m children element, becouse we don't want to add empty and useless elements. Someone could ask why don't we put this class to the footer, or other element benife of the parent with floated children. That should work, but good practice is to create independent boxexs/containers for each group of elements. */
+.fix {
+  clear: both;
+}
+/* Good practice slution. This code mast be added once, and reuse */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+/* CLEANING FLOAT END */

@@ -25,7 +25,6 @@ body {
 
 header {
   padding-top: 20px;
-  padding-bottom: 20px;
   color: #617140;
 }
 
@@ -89,3 +88,46 @@ header p {
   zoom: 1;
 }
 /* CLEANING FLOAT END */
+
+/* NAV START */
+
+/* add space between nav and other elements */
+.site-nav {
+  margin-top: 20px;
+}
+
+/* remove default style from ul element */
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove bullets */
+.site-nav li {
+  list-style: none;
+  /* position horisontal: parent element, "ul" has no knowladge about his children if they are floated. So we add group class to parent el. ul */
+  float: left;
+}
+
+.site-nav a {
+  /* "a" element is default inline display, so we can't set them width. We want that souranding be aware about "a" width or padding */
+  display: block;
+  /* remove underground */
+  text-decoration: none;
+  /* color for links */
+  color: #617140;
+  /* add padding for "a" elements */
+  padding: 10px 20px;
+  /* add space horizontaly in each "a" elements */
+  margin-right: 5px;
+  border: 3px solid #e5e9dc;
+  /* fix duble border efect when two diffrent border stick to each other */
+  border-bottom: none;
+}
+
+/* set hover on mouse touch by user pseudo class "hover */
+.site-nav a:hover {
+  background-color: #e5e9dc;
+}
+
+/* NAV END */

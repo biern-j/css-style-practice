@@ -7,6 +7,13 @@ body {
   font-family: Tahoma, sans-serif;
   font-size: 87%;
 }
+
+img {
+  /* for fit a widht of a parent box */
+  max-width: 100%;
+  /* for fit and shring a main column */
+  height: auto;
+}
 /* UX: users' eyes focus on the center of the page */
 .container {
   max-width: 940px;
@@ -131,3 +138,32 @@ header p {
 }
 
 /* NAV END */
+
+/* BANNER-IMAGE START */
+
+/* Usinng position absolute: element is positioning on absolut position to its nearest parent (relatives). If we do not said which parent element is a relative directly, absolut element will be pisition in to DOM element. */
+.banner-description {
+  position: absolute;
+  /* bottom zero from what? */
+  bottom: 0;
+  /* left zero from what? */
+  left: 0;
+  /* Style a text */
+  color: #fff;
+  /* for transparent color use rgba colors: R: red, B: blue, G: green, A: alpha - for trnasparent */
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 25px;
+}
+/* From parent with relative position. We can set a position horisontal and vertical for element with relative position too. But it will be change position in to relation to its original position. It won't impact other elements in neighberhood. */
+.image-banner {
+  position: relative;
+  /* If multiple element overlapping each other we can use z-index: 10 for stacking order; It can overide defalt behavior of overlapping elements which is element with relative or absolute position in latter pisition in html, overlaps the earlier element with relative or absolute position. With z-index we can controle which one element will be overlaps by adding index valiue, always bigger value overlap smaler value */
+  /* left: 100px;
+  z-index: 10; */
+}
+
+/* img element is inline default, and it set a width and height by font size, line hight values, so it isn't precise. So we need to set display block for img */
+.image-banner img {
+  display: block;
+}
+/* BANNER-IMAGE END */

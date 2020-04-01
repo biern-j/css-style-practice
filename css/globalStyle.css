@@ -168,3 +168,51 @@ header p {
   display: block;
 }
 /* BANNER-IMAGE END */
+
+/* TABLE STYLE START */
+
+table {
+  /* rid of spacing between tab cells */
+  border-spacing: 0;
+  /* set correct haviness for borders inside tab */
+  border-collapse: collapse;
+  /* Tab take as many space is it is needed, so it can be not all avaliable space. So we set width on 100% */
+  width: 100%;
+}
+/* Control width of tab column: by first elemenst in first row of table. So we set width for theader td by uniqie class name */
+.col-id {
+  width: 10%;
+}
+
+.col-name {
+  width: 10%;
+}
+
+.col-quote {
+  width: 80%;
+}
+
+table th {
+  text-align: left;
+  background-color: #869960;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+table th,
+table td {
+  border: 1px solid #869960;
+  padding: 10px;
+  /* If content of cell is bigger than one line, the height of whole row will changed, and position of other, single chart, will be not in one level, so wie set vertical position */
+  vertical-align: middle;
+}
+/* Set zebra row in talbe */
+table tbody tr:nth-child(even) td {
+  background-color: #e5e9dc;
+}
+
+/* Get to specyfic column. This rules can be apply for specyfic tab. For other tab it won't match. So we add specyfic class name for our tab  */
+table.quotes-tab tr :nth-child(2),
+table.quotes-tab tr :nth-child(3) {
+  text-align: center;
+}
+/* TABLE STYLE END */

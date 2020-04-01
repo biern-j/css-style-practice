@@ -3,50 +3,56 @@
   <head>
     <meta charset="uft-8" />
     <title>My Css</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/globalStyle.css" />
   </head>
   <body>
-    <header>
-      <h1>My CSS practice</h1>
-      <p>
-        &ldquo;Ale kto czci duszę rozumną, ogarniającą wszechświat i
-        społeczeństwo, o żadną z innych rzeczy już się nie troszczy. Ponad
-        wszystko duszę własną utrzymuje w takim stanie, aby była rozumna i
-        społeczna i czynna, i śpieszyła z pomocą bliźniemu, który do tego samego
-        celu dąży.&rdquo;
-      </p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="favoriteColors.html">Favorite Colors</a></li>
-          <li><a href="myAudio.html">Audio</a></li>
-          <li><a href="myVideo.html">Video</a></li>
-          <li><a href="mySpecialCharacters.html">Special Characters</a></li>
-          <li><a href="mySemanticStructure.html">Semantic Structure</a></li>
-          <li><a href="myForm.html">Form</a></li>
-          <li><a href="myTable.html">Table</a></li>
-          <li><a href="myBoxModel/myBoxModel.html">My Box Model</a></li>
-          <li><a href="myPageLayout/myPageLayout.html">My Page Layout</a></li>
-          <li><a href="myOverlapEfects/myOverlaping.html">My Overlaping Efects</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <header>
-        <h1>My section</h1>
-        <p>Marek Aurelusz</p>
-        <section>
-          <h1>Cytaty:</h2>
-          <p class="highlite">
-            &ldquo;Boże, daj mi pogodę ducha, abym godził się z tym, czego
-            zmienić nie mogę, odwagę, abym zmieniał to, co zmienić mogę, i
-            mądrość, abym zawsze potrafił odróżnić jedno od drugiego.&rdquo;
-          </p>
-        </section>
-      </header>
-    </section>
-    <footer>
-      <p class="highlite">css for marek aureliusz quo&copy;</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>My CSS practice</h1>
+            <p>
+              &ldquo;Ale kto czci duszę rozumną, ogarniającą wszechświat i
+              społeczeństwo, o żadną z innych rzeczy już się nie troszczy. Ponad
+              wszystko duszę własną utrzymuje w takim stanie, aby była rozumna i
+              społeczna i czynna, i śpieszyła z pomocą bliźniemu, który do tego samego
+              celu dąży.&rdquo;
+            </p>
+            <nav class="site-nav">
+                <ul class="group">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favoriteColors.html">Favorite Colors</a></li>
+                <li><a href="myAudio.html">Audio</a></li>
+                <li><a href="myVideo.html">Video</a></li>
+                <li><a href="mySpecialCharacters.html">Special Characters</a></li>
+                <li><a href="mySemanticStructure.html">Semantic Structure</a></li>
+                <li><a href="myForm.html">Form</a></li>
+                <li><a href="myTable.html">Table</a></li>
+                <li><a href="myBoxModel/myBoxModel.html">My Box Model</a></li>
+                <li><a href="myPageLayout/myPageLayout.html">My Page Layout</a></li>
+                <li><a href="myOverlapEfects/myOverlaping.html">My Overlaping Efects</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <section>
+            <header>
+              <h1>My section</h1>
+              <p>Marek Aurelusz</p>
+            </header>
+              <article>
+                <h1>Cytaty:</h2>
+                <p class="highlite">
+                  &ldquo;Boże, daj mi pogodę ducha, abym godził się z tym, czego
+                  zmienić nie mogę, odwagę, abym zmieniał to, co zmienić mogę, i
+                  mądrość, abym zawsze potrafił odróżnić jedno od drugiego.&rdquo;
+                </p>
+              </article>
+
+          </section>
+
+          <footer>
+            <p class="highlite">css for marek aureliusz quo&copy;</p>
+          </footer>
+    </div>
+
   </body>
 </html>

@@ -1,10 +1,38 @@
+/* font style start */
+
+@font-face {
+  font-family: "introscriptr-h2base";
+  src: url("fonts/introscriptr-h2base-webfont.woff2") format("woff2"),
+    url("fonts/introscriptr-h2base-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "introheadr-base";
+  src: url("fonts/introheadr-base-webfont.woff2") format("woff2"),
+    url("fonts/introheadr-base-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "introrustg-base2line";
+  src: url("fonts/introrustg-base2line-webfont.woff2") format("woff2"),
+    url("fonts/introrustg-base2line-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font style end */
+
 html {
   background-color: #869960;
 }
 
 /* set font for all paragraphs */
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "introrustg-base2line", Arial, sans-serif;
 }
 
 img {
@@ -42,9 +70,10 @@ footer {
 }
 
 header h1 {
+  font-family: "introrustg-base2line", sans-serif;
   margin: 0;
   font-weight: normal;
-  font-size: 165%;
+  font-size: 600%;
 }
 
 header p {

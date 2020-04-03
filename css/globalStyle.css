@@ -28,11 +28,13 @@
 
 html {
   background-color: #869960;
+  /* line-height: 1.75 ; */
 }
 
 /* set font for all paragraphs */
 body {
   font-family: "introrustg-base2line", Arial, sans-serif;
+  font-size: 150%;
 }
 
 img {
@@ -74,10 +76,13 @@ header h1 {
   margin: 0;
   font-weight: normal;
   font-size: 600%;
+  font-style: none;
+  /* text-shadow: 10px 5px 15px rgba(0, 0, 0, 0.5); */
 }
 
 header p {
   margin: 0;
+  letter-spacing: 4px;
 }
 
 .content-area {
@@ -142,6 +147,7 @@ header p {
   list-style: none;
   /* position horisontal: parent element, "ul" has no knowladge about his children if they are floated. So we add group class to parent el. ul */
   float: left;
+  letter-spacing: 14px;
 }
 
 .site-nav a {
@@ -316,3 +322,21 @@ input[type="submit"]:focus {
 }
 
 /* FORM STYLE END */
+
+/* BOX STYLE START */
+.box-A {
+  background-color: lightgray;
+  padding: 30px;
+  border: 3px black solid;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.box-B {
+  background-color: orange;
+  width: 250px;
+  height: 250px;
+}
+/* BOX STYLE END */

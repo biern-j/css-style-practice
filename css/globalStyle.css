@@ -53,8 +53,12 @@ img {
        */
   margin: auto;
   background-color: #fff;
+  background-image: url(../img/color-tile.png);
+  background-repeat: repeat-x;
+
   padding-left: 40px;
-  padding-right: 40px;
+  /* padding-right: 40px; */
+  padding-top: 15px;
   /* Width of box changed, but we still want to our width as a max-width 940px. Padding will remain, but max-width stay no changed */
   box-sizing: border-box;
 }
@@ -62,6 +66,9 @@ img {
 header {
   padding-top: 20px;
   color: #617140;
+  background-image: url(../img/very-large-flamingo.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 
 footer {

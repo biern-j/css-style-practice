@@ -54,15 +54,13 @@ img {
   margin: auto;
   background: url(../img/color-tile.png) left bottom repeat-x,
     #fff url(../img/color-tile.png) left top repeat-x;
-  /* background-color: #fff;
-  background-image: url(../img/color-tile.png);
-  background-repeat: repeat-x; */
-
-  /* padding-left: 40px; */
-  /* padding-right: 40px; */
   padding-top: 15px;
   /* Width of box changed, but we still want to our width as a max-width 940px. Padding will remain, but max-width stay no changed */
   box-sizing: border-box;
+}
+.first-page {
+  background: url(../img/very-large-flamingo.jpg), top center, no-repeat;
+  background-repeat: no-repeat;
 }
 
 /* header {
@@ -93,12 +91,11 @@ header:before {
 
 header {
   color: #617140;
+}
+.header-image {
   background-image: url(../img/very-large-flamingo.jpg);
   background-position: left top;
   background-repeat: no-repeat;
-}
-.header-background {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {

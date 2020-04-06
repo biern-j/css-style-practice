@@ -52,23 +52,53 @@ img {
       equal:
        */
   margin: auto;
-  background-color: #fff;
+  background: url(../img/color-tile.png) left bottom repeat-x,
+    #fff url(../img/color-tile.png) left top repeat-x;
+  /* background-color: #fff;
   background-image: url(../img/color-tile.png);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x; */
 
-  padding-left: 40px;
+  /* padding-left: 40px; */
   /* padding-right: 40px; */
   padding-top: 15px;
   /* Width of box changed, but we still want to our width as a max-width 940px. Padding will remain, but max-width stay no changed */
   box-sizing: border-box;
 }
 
+/* header {
+  position: relative;
+  background: #5c97ff;
+  overflow: hidden;
+  color: #617140;
+}
+header:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url(../img/very-large-flamingo.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+} */
+
 header {
-  padding-top: 20px;
   color: #617140;
   background-image: url(../img/very-large-flamingo.jpg);
   background-position: left top;
   background-repeat: no-repeat;
+}
+.header-background {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -84,6 +114,8 @@ header h1 {
   font-weight: normal;
   font-size: 600%;
   font-style: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline;
   /* text-shadow: 10px 5px 15px rgba(0, 0, 0, 0.5); */
 }
 
@@ -103,7 +135,7 @@ header p {
 .main-area {
   width: 66%;
   float: left;
-  padding-right: 40px;
+  padding: 0 40px;
   /* again: now total width of element is changed by padding 66% + 40px, but we still want our width to be 66%, so we use box-sizing: border-box */
   box-sizing: border-box;
 }
@@ -112,6 +144,25 @@ header p {
   width: 34%;
   float: left;
   background-color: #e5e9dc;
+  /* wery ipdated browser*/
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#e5e9dc),
+    to(#fff)
+  );
+  /* slighty updated browser */
+  background-image: -webkit-linear-gradient(top, #e5e9dc, #fff);
+  /* mozilla  */
+  background-image: -moz-linear-gradient(top, #e5e9dc, #fff);
+  /* mircosoft */
+  background-image: -ms-linear-bradient(top, #e5e9dc, #fff);
+  /* opera */
+  background-image: -o-linear-gradient(top, #e5e9dc, #fff);
+  /* our background-img
+   */
+  background-image: linear-gradient(to bottom, #e5e9dc, #fff);
   padding: 20px 40px;
   box-sizing: border-box;
   font-size: 85%;
@@ -172,6 +223,7 @@ header p {
   border: 3px solid #e5e9dc;
   /* fix duble border efect when two diffrent border stick to each other */
   border-bottom: 3px solid #e5e9dc;
+  background-color: #fff;
 }
 
 /* set hover on mouse touch by user pseudo class "hover */
@@ -202,6 +254,20 @@ header p {
   /* If multiple element overlapping each other we can use z-index: 10 for stacking order; It can overide defalt behavior of overlapping elements which is element with relative or absolute position in latter pisition in html, overlaps the earlier element with relative or absolute position. With z-index we can controle which one element will be overlaps by adding index valiue, always bigger value overlap smaler value */
   /* left: 100px;
     z-index: 10; */
+}
+
+.background-img-bird {
+  text-align: center;
+  padding: 100px 0;
+  /* short version */
+  background: #c2bbb1 url(../img/bird.jpg) center center no-repeat;
+  background-size: cover;
+  /* background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  /* other solution */
+  /* background-size: 100%; */
 }
 
 /* img element is inline default, and it set a width and height by font size, line hight values, so it isn't precise. So we need to set display block for img */

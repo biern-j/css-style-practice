@@ -243,6 +243,10 @@ header p {
     z-index: 10; */
 }
 
+.image-banner .circle {
+  border-radius: 50%;
+}
+
 .background-img-bird {
   text-align: center;
   padding: 100px 0;

@@ -1,0 +1,22 @@
+{
+  "name": "css-style-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolawro/css-style-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolawro/css-style-practice/issues"
+  },
+  "homepage": "https://github.com/jolawro/css-style-practice#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}

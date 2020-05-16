@@ -1,0 +1,20 @@
+$h1-color: black;
+
+body {
+  margin: 0;
+}
+h1 {
+  color: $h1-color;
+}
+p {
+}
+
+header {
+  display: grid;
+  justify-items: center;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-around;
+}

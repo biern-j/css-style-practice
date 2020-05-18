@@ -7,8 +7,11 @@ h1 {
   color: $h1-color;
 }
 p {
+  background-color: red;
 }
-
+article {
+  display: flex;
+}
 header {
   display: grid;
   justify-items: center;
@@ -16,5 +19,6 @@ header {
 
 .articles {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: blue;
 }
